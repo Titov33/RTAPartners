@@ -21,7 +21,10 @@
     "i": "^0.3.7",
     "patch-package": "^8.0.0",
     "react": "18.2.0",
+<<<<<<< HEAD
     "react-hook-form": "^7.45.4",
+=======
+>>>>>>> 3fe899f3e318597f10fb0ecbb14f06952eafb5fb
     "react-native": "0.72.3",
     "react-native-gesture-handler": "~2.12.0",
     "react-native-responsive-fontsize": "^0.5.1",
