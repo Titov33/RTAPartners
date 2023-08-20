@@ -1,14 +1,19 @@
 import React from 'react';
 import Styles from './Styles';
-import {Text, View} from 'react-native';
-import ResponsiveImage from 'react-native-responsive-image';
+import {Text, View, Image} from 'react-native';
 
 export default function Head() {
   return (
-    <View style={Styles.box}>
-      <Text style={Styles.textRTA}>РТА ТЕЛЕКОМ</Text>
-      <ResponsiveImage source={require('../../images/RTALogo.png')} style={Styles.logo}/>
-      <ResponsiveImage source={require('../../images/logoGL1.png')} style={Styles.House}/>
+    <View style={Styles.boxHead}>
+      <View style={Styles.boxGLHead}>
+        <View style={Styles.boxL}>
+          <Image source={require('../../images/RTALogo.png')} style={Styles.logo}/>
+        </View>
+        <Text style={Styles.textRTA}>РТА ТЕЛЕКОМ</Text>
+        <View style={Styles.boxH}>
+          <Image source={require('../../images/logoGL1.png')} style={Styles.logo}/>
+        </View>
+      </View>
     </View>
   );
 }

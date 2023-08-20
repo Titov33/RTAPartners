@@ -1,62 +1,64 @@
 import { StyleSheet } from "react-native";
-import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
+import { RFPercentage, RFValue } from "react-native-responsive-fontsize"; // RFPercentage - значение в %
 
 const styles = StyleSheet.create({
-    box: {
-        height: '100%',
+    container: {
+        flex: 1,
     },
-    box1: {
+    boxB: {
         backgroundColor: 'black',
         width: '94%',
-        height: '7%',
-        top: '37%',
+        height: RFValue(52),
+        marginVertical: RFValue(15),
     },
-    box2: {
-        backgroundColor: 'black',
-        width: '94%',
-        height: '7%',
-        top: '42%',
-    },
+    boxGL:  {
+        paddingHorizontal: RFValue(25),
+        paddingVertical: RFValue(15),
+        flexDirection: 'row',
+      },
     boxRTA: {
-        left: '40%',
-        top: '10%',
+        flex: .5,
+        top: '30%',
         width: '100%',
-        height: '10%',
+        flexDirection: 'row',
+        paddingHorizontal: RFValue(48),
+        paddingVertical: RFValue(50),
     },
-    textR: {
+    textB: {
         width:'100%',
         height: '100%',
-        left: '17%',
-        top: '30%',
         fontSize: RFValue(16),
         fontFamily: 'mt-med',
         color: '#fff',
+        marginHorizontal: RFValue(10),
     },
-    One: {
-        width:'3%',
-        height: '22%',
-        left: '10%',
-        top: '-60%',
+    textRTA: {
+        color: '#fff',
+        height: '20%',
+        top: '5%',
+        fontSize: RFValue(21),
+        fontFamily: 'mt-med',
+        marginHorizontal: RFValue(20),
     },
     text: {
         color: '#fff',
         fontSize: RFValue(14),
-        top: '46%',
-        left: '9%',
         fontFamily: 'mt-reg',
+        marginHorizontal: RFValue(25),
+        marginVertical: RFValue(25),
+        flex: .5,
     },
-    textRTA: {
-        color: '#fff',
-        fontSize: RFValue(21),
-        top: '60%',
-        left: '-5%',
-        fontFamily: 'mt-med',
+    One: {
+        width:'4%',
+        height: '60%',
+        resizeMode: 'cover',
+        top: '1.6%',
     },
     logo: {
-        width:'20%',
-        height: '70%',
-        top: '5%',
-        left: '-25%',
+        width:'10%',
+        height: '25%',
+        flex: 1,
+        left: '7%',
     },
   });
   

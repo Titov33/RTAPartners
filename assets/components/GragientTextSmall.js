@@ -8,7 +8,7 @@ export function GragientTextSmall(props) {
         <MaskedView maskElement={<Text style={[props.style, {backgroundColor:'transparent'}]}>{props.text}</Text>}>
             <LinearGradient
                 start={{x: 0.1, y: 0}}
-                end={{x: 0.6, y: 1}}
+                end={{x: 1, y: 1}}
                 colors={['#FF174F', '#1883E7']}
                 locations={[0.1, 0.5, 0.8]}
             >

@@ -17,31 +17,31 @@ export default function RTAREG({ navigation }) {
   }
 
   return (
-  <View style={Styles.box}>
+  <View style={Styles.container}>
     <LinearGradient 
-    style={Styles.box}
+    style={Styles.container}
     start={{x: 0, y: 0}}
     end={{x: 1, y: 1}}
     locations={[0.3, 0.5, 0.7]}
     colors={['#00BFFF', '#0000ff', '#FF00FF']}
     >
-      <View style={Styles.box1}>
-        <TouchableOpacity onPress={discount}>
-          <GragientText style={Styles.textR} text='СДЕЛАТЬ СКИДКУ'></GragientText>
+      <View style={Styles.boxB}>
+        <TouchableOpacity onPress={discount} style={Styles.boxGL}>
+          <ResponsiveImage source={require('../../../../images/YkazRed.png')} style={Styles.One}/>
+          <GragientText style={Styles.textB} text='СДЕЛАТЬ СКИДКУ'></GragientText>
         </TouchableOpacity>
-        <ResponsiveImage source={require('../../../../images/YkazRed.png')} style={Styles.One}/>
       </View>
-      <View style={Styles.box2}>
-        <TouchableOpacity onPress={advmanag}>
-          <Text style={Styles.textR}>УПРАВЛЯТЬ РЕКЛАМОЙ</Text>
+      <View style={Styles.boxB}>
+        <TouchableOpacity onPress={advmanag} style={Styles.boxGL}>
+          <ResponsiveImage source={require('../../../../images/YkazWhite.png')} style={Styles.One}/>
+          <Text style={Styles.textB}>УПРАВЛЯТЬ РЕКЛАМОЙ</Text>
         </TouchableOpacity>
-        <ResponsiveImage source={require('../../../../images/YkazWhite.png')} style={Styles.One}/>
       </View>
-      <View style={Styles.box3}>
-        <TouchableOpacity onPress={loadScene}>
-          <Text style={Styles.textR}>СМОТРЕТЬ СТАТИСТИКУ</Text>
+      <View style={Styles.boxB}>
+        <TouchableOpacity onPress={loadScene} style={Styles.boxGL}>
+          <ResponsiveImage source={require('../../../../images/YkazWhite.png')} style={Styles.One}/>
+          <Text style={Styles.textB}>СМОТРЕТЬ СТАТИСТИКУ</Text>
         </TouchableOpacity>
-        <ResponsiveImage source={require('../../../../images/YkazWhite.png')} style={Styles.One}/>
       </View>
     </LinearGradient>
   </View>

@@ -8,39 +8,24 @@ const styles = StyleSheet.create({
     width: '100%',
     height: screenWidth,
     backgroundColor: 'purple',
-    height: '50%',
   },
   imageContainer: {
-    flex: 1,
     width: '100%',
   },
 
   //UP.js
   container: {
-    height: '80%',
+    flex: 1,
   },
   text: {
-    zIndex: 2,
-    width: '100%',
-    top: '60%',
-    left: '7%',
-    fontSize: RFValue(35),
-    fontFamily: 'mt-med',
+    zIndex: 1,
     position: 'absolute',
-    backgroundColor: 'transparent',
-    color: '#fff',
-  },
-
-  text2: {
-    zIndex: 2,
     width: '100%',
-    top: '60%',
-    left: '7%',
-    fontSize: RFValue(20),
+    fontSize: RFValue(30),
     fontFamily: 'mt-med',
-    position: 'absolute',
-    backgroundColor: 'transparent',
     color: '#fff',
+    paddingHorizontal: RFValue(30),
+    top: '60%',
   },
 });
 

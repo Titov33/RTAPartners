@@ -42,6 +42,5 @@ function CarouselItem({ item }, parallaxProps) {
       />
       <Text style={Styles.text}>ТАМ, ГДЕ ТВОЙ БИЗНЕС</Text>
     </View>
-   
   );
 }
